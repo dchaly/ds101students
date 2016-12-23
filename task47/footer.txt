@@ -1,0 +1,17 @@
+				]
+			};
+
+			new BubbleTree({
+				data: data,
+				container: '.bubbletree'
+			});
+		});
+
+	</script>
+</head>
+<body>
+	<div class="bubbletree-wrapper">
+		<div class="bubbletree"></div>
+	</div>
+</body>
+</html>

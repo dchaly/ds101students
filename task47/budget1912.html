@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="WINDOWS-1251"/>
+	<title>Бюджет Росси 1912-1915 BubbleTree Demo</title>
+
+	<script type="text/javascript" src="../assets/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/scripts/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="../assets/scripts/jquery.history.js"></script>
+	<script type="text/javascript" src="../assets/scripts/jquery.tooltip.min.js"></script>
+	<script type="text/javascript" src="../assets/scripts/raphael-min.js"></script>
+	<script type="text/javascript" src="../assets/scripts/Tween.js"></script>
+	<script type="text/javascript" src="../assets/scripts/bubbletree.js"></script>
+	<script type="text/javascript" src="http://assets.openspending.org/openspendingjs/master/lib/aggregator.js"></script>
+	<link rel="stylesheet" type="text/css" href="../assets/styles/bubbletree.css" />
+	<script type="text/javascript" src="../assets/styles/cofog.js"></script>
+	<font face = "arial" size = "2">
+	Бессмертная Полина ПИЭ-21<br>
+	<a href="budget1912.html">Бюджет 1912</a>
+	<a href="budget1913.html">Бюджет 1913</a>
+	<a href="budget1914.html">Бюджет 1914</a>
+	<a href="budget1915.html">Бюджет 1915</a>
+	<script type="text/javascript">
+
+		$(function() {
+			var data = {				label: 'Бюджет России за 1912',
+				amount:4904004014,
+				color: '#2ec040',
+				children: [
+					{ label: 'Министерство Императорскаго Двора', amount: 16359595, color: '#d500b1' },
+					{ label: 'Высшiя государственныя учрежденiя', amount: 8147511, color: '#331516' },
+					{ label: 'Государственный Советъ', amount: 2009138, color: '#228b91' },
+					{ label: 'Государственная Дума', amount: 2783285, color: '#74d6d4' },
+					{ label: 'Государственная канцелярiя', amount: 1880672, color: '#6685f6' },
+					{ label: 'Канцелярiя Совета Министровъ', amount: 202357, color: '#99aca8' },
+					{ label: 'Собственная его Императорскаго величества канцелярiя', amount: 741703, color: '#545974' },
+					{ label: 'Канцелярiя его Императорского величества по принятию прошений', amount: 530356, color: '#aa577e' },
+					{ label: 'Ведомство Святейшаго Синода', amount: 40129979, color: '#bc6104' },
+					{ label: 'Министерство Внутреннихъ Делъ', amount: 172393990, color: '#f2bfcb' },
+					{ label: 'По общей части', amount: 99129513, color: '#8a9b7f' },
+					{ label: 'По почтово-телеграфной части', amount: 73264477, color: '#60196d' },
+					{ label: 'Министерство Финансовъ', amount: 426860974, color: '#f61478' },
+					{ label: 'Общая Канцелярiя Министра Финансов', amount: 478802, color: '#b66bfb' },
+					{ label: 'Департаментъ Государственнаго Казначейства', amount: 131134814, color: '#44c684' },
+					{ label: 'Департаментъ Окладныхъ Сборовъ', amount: 15433754, color: '#cb27da' },
+					{ label: 'Главное Управленiе Неокладныхъ Сборовъ и Казенн. Продажи Питей', amount: 215588516, color: '#ccfe08' },
+					{ label: 'Департаментъ Таможенныхъ Сборовъ', amount: 10601336, color: '#42a357' },
+					{ label: 'Управленiе Отдельнаго Корпуса Пограничной Стражи', amount: 14918531, color: '#10c230' },
+					{ label: 'Департаментъ Железнодорожныхъ Делъ', amount: 15376394, color: '#5bca1d' },
+					{ label: 'Особенная Канцелярiя по Кредитной Части', amount: 23328827, color: '#fb0220' },
+					{ label: 'Министерство Юстицiи', amount: 82616422, color: '#ec81ed' },
+					{ label: 'По общей части', amount: 48876163, color: '#a63f63' },
+					{ label: 'По тюремной части', amount: 33740259, color: '#1d6d57' },
+					{ label: 'Министерство Иностранныхъ Делъ', amount: 6569190, color: '#809de4' },
+					{ label: 'Министерство Народнаго Просвященiя', amount: 117537360, color: '#d69bb4' },
+					{ label: 'Министерство Путей Сообщенiя', amount: 553615641, color: '#59dcb0' },
+					{ label: 'Канцелярiя Министра Путей Сообщенiя', amount: 3128458, color: '#ad9e68' },
+					{ label: 'Управленiе Внутреннихъ Водныхъ Путей и Шоссейныхъ Дорогъ', amount: 34012665, color: '#dd45ca' },
+					{ label: 'Управленiе Железныхъ Дорогъ', amount: 516474518, color: '#f5d1d8' },
+					{ label: 'Министерство Торговли и Промышленности', amount: 49235728, color: '#1e99c0' },
+					{ label: 'По общей части', amount: 6250918, color: '#d64165' },
+					{ label: 'Горный Департаментъ', amount: 25904272, color: '#cdf9b6' },
+					{ label: 'По части торговаго мореплаванiя и портовъ', amount: 17080538, color: '#2df73e' },
+					{ label: 'Главное управление Землеуйстройства и Земледенлiя', amount: 116635647, color: '#63a434' },
+					{ label: 'Канцелярiя Главноуправляющего Землеустройствомъ и Земледелиемъ', amount: 3229594, color: '#d958c6' },
+					{ label: 'Департаментъ Государственныхъ Земельныхъ Имуществъ', amount: 24802884, color: '#8c45a7' },
+					{ label: 'Департаментъ Земледелiя', amount: 21879841, color: '#a4fd33' },
+					{ label: 'Отделъ Сельской Экономiи и Сельскохозяйственной Статистики', amount: 3002961, color: '#63419c' },
+					{ label: 'Отделъ Земельныхъ Улучшений', amount: 6596036, color: '#27283d' },
+					{ label: 'Отдел Сельскаго Строительства', amount: 0, color: '#91607e' },
+					{ label: 'Лесной Департаментъ', amount: 30004338, color: '#6e804f' },
+					{ label: 'Переселенческое Управленiе', amount: 27119993, color: '#ee07cc' },
+					{ label: 'Главное управление Государственнаго Коннозаводства', amount: 2203879, color: '#37ff47' },
+					{ label: 'Военное Министерство', amount: 492933426, color: '#fdaf3b' },
+					{ label: 'Главное Интендантское Управленiе', amount: 346677103, color: '#39d81f' },
+					{ label: 'Главное Артиллерiйское Управленiе', amount: 39830062, color: '#aa6012' },
+					{ label: 'Главное Инженерное Управленiе', amount: 31122941, color: '#dfedc1' },
+					{ label: 'Главное Управленiе по Квартирному Довольствiю Войскъ', amount: 0, color: '#9a42b1' },
+					{ label: 'Главное управленiе Военно-Учебныхъ Заведенiй', amount: 13865094, color: '#454cd2' },
+					{ label: 'Главное Управленiе Генеральнаго Штаба', amount: 38533315, color: '#8b6fea' },
+					{ label: 'Главный Штаб', amount: 16454750, color: '#fb12df' },
+					{ label: 'Главнное Военно-Санитарное Управленiе', amount: 3839592, color: '#cb06e8' },
+					{ label: 'Главнное Военно-Судное Управленiе', amount: 1598987, color: '#ab57f1' },
+					{ label: 'Канцелярiя Военнаго Министерства', amount: 1011573, color: '#4561b2' },
+					{ label: 'Морское Министерство', amount: 159145970, color: '#eaea72' },
+					{ label: 'Государственный Контролъ', amount: 11034948, color: '#a0d237' },
+					{ label: 'Платежи по государственнымъ займамъ', amount: 404521546, color: '#7ad6fb' },
+					{ label: '"На расходы непредусмотренные сметами, на экстренные в теченiе года надобности"', amount: 10000000, color: '#f451fd' },
+					{ label: 'Министерство Финансовъ', amount: 2205742, color: '#1e6198' },
+					{ label: 'Министерство Путей Сообщенiя', amount: 109520168, color: '#2da900' },
+					{ label: 'Министерство Торговли и Промышленности', amount: 0, color: '#cc0387' },
+					{ label: 'Военное Министерство', amount: 70128950, color: '#c8865d' },
+					{ label: 'Морское Министерство', amount: 115454, color: '#68968a' },
+					{ label: 'Государственный Контролъ', amount: 861104, color: '#a02378' },
+					{ label: 'На погашение 4% билетовъ гоударственнаго казначейства', amount: 100000000, color: '#c7de21' },
+					{ label: 'На расходы по выкупу пятаго и шестого 5% займовъ 1854 и 1855 г.г и других государственных займов', amount: 48791460, color: '#efaf40' },
+					{ label: 'Расходы по улучшенiю железнодорожнаго дела', amount: 0, color: '#3c26aa' },
+					{ label: 'Расходы на выкупъ предъявленныхъ къ оплате облигацiй Россiйскаго Государственнаго займа 1905 г.', amount: 0, color: '#a559dc' },
+					{ label: 'На сооружениiе подъездныхъ железнодорожныхъ и иныъ путей сообщенiя', amount: 0, color: '#1144ed' },
+				]
+			};
+
+			new BubbleTree({
+				data: data,
+				container: '.bubbletree'
+			});
+		});
+
+	</script>
+</head>
+<body>
+	<div class="bubbletree-wrapper">
+		<div class="bubbletree"></div>
+	</div>
+</body>
+</html>

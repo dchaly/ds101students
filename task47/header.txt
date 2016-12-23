@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="WINDOWS-1251"/>
+	<title>Бюджет Росси 1912-1915 BubbleTree Demo</title>
+
+	<script type="text/javascript" src="../assets/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/scripts/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="../assets/scripts/jquery.history.js"></script>
+	<script type="text/javascript" src="../assets/scripts/jquery.tooltip.min.js"></script>
+	<script type="text/javascript" src="../assets/scripts/raphael-min.js"></script>
+	<script type="text/javascript" src="../assets/scripts/Tween.js"></script>
+	<script type="text/javascript" src="../assets/scripts/bubbletree.js"></script>
+	<script type="text/javascript" src="http://assets.openspending.org/openspendingjs/master/lib/aggregator.js"></script>
+	<link rel="stylesheet" type="text/css" href="../assets/styles/bubbletree.css" />
+	<script type="text/javascript" src="../assets/styles/cofog.js"></script>
+	<font face = "arial" size = "2">
+	Бессмертная Полина ПИЭ-21<br>
+	<a href="budget1912.html">Бюджет 1912</a>
+	<a href="budget1913.html">Бюджет 1913</a>
+	<a href="budget1914.html">Бюджет 1914</a>
+	<a href="budget1915.html">Бюджет 1915</a>
+	<script type="text/javascript">
+
+		$(function() {
+			var data = {
