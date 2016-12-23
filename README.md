@@ -4,7 +4,7 @@
 
 В каждом каталоге одна задача.
 
-[/task49/](https://github.com/dchaly/ds101students/tree/master/task49) [Задача 49.](https://github.com/infoculture/datatasks/issues/49) Валерия Смирнова и Дарья Пичугина. [Результат визуализации](https://github.com/dchaly/ds101students/blob/master/task50/uranium.pdf)
+[/task49/](https://github.com/dchaly/ds101students/tree/master/task49) [Задача 49.](https://github.com/infoculture/datatasks/issues/49) Валерия Смирнова и Дарья Пичугина. [Результат визуализации](https://github.com/dchaly/ds101students/blob/master/task49/task49.pdf)
 
 [/task50/](https://github.com/dchaly/ds101students/tree/master/task50) [Задача 50.](https://github.com/infoculture/datatasks/issues/50) Павел Лапинский и Михаил Сиряков. [Результат визуализации](https://github.com/dchaly/ds101students/blob/master/task50/uranium.pdf)
 
