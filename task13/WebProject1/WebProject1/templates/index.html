@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>{{data.title}}</title>
+    <!--<link href="/static/styles.css" rel="stylesheet" />-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/content/styles.css" />
+</head>
+<body>
+    <script>
+        $(function () {
+            var linkRegexp = /zakupki.gov.ru\/epz\/contract\/contractCard/i;
+            var zatratyRegexp = /clearspending.ru\/contract\//i;
+            var links = [];
+            $('a', window.parent.document).each(function () {
+                var str = $(this).attr('href'),
+                result = linkRegexp.exec(str);                
+                if (result != null) {
+                    links.push(str);
+                } else {
+                    result = zatratyRegexp.exec(str);
+                    if (result != null) {
+                        links.push(str);
+                    }
+                }
+            });
+
+            if (links.length) {
+                $.ajax({
+                    type: 'POST',
+                    url: '/getLinks',
+                    data: 'links=' + links,
+                    dataType:'json',
+                    success: function (response) {
+                        console.log(response);
+                        var c = response.contr;
+                        for (var i = 0; i < c.length;i++) {
+                            var contrHtml = $('<div class="contract">'+
+                            '<span name="name">'+c[i].name+'</span>'+
+                            '<a target="_blank" name="link" href="'+c[i].url+'">№ '+c[i].regNum+'</a>'+
+                            '<div class="customer"><span>' + 'Заказчик: ' + c[i].customer + '</span></div>' +
+                            '<div class="suppliers"><span>' + 'Поставщик: ' + c[i].suppliers + '</span></div>' +
+                            '<div class="signDate"><span>' + 'Дата подписания: ' + c[i].signDate + '</span></div>' +
+                            '<div class="execution"><span>' + 'Дата начала выполнения: ' + c[i].execution + '</span></div>' +
+                            '<div class="execution2"><span>' + 'Дата окончания выполнения: ' + c[i].execution2 + '</span></div>' +
+                            '<div class="price"><span>' + 'Цена контракта: ' + c[i].price + ' ' + c[i].currency + '</span></div> </div>');
+                            $('#res').append(contrHtml);
+                        }
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
+            }
+
+        });
+    </script>
+      
+    <div id="res"></div>
+</body>
+</html>

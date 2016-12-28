@@ -1,0 +1,30 @@
+D:\Projects\WebProject1\WebProject1\bin\Microsoft.PythonTools.WebRole.dll
+D:\Projects\WebProject1\WebProject1\obj\Debug\attach_server.py
+D:\Projects\WebProject1\WebProject1\obj\Debug\visualstudio_py_debugger.py
+D:\Projects\WebProject1\WebProject1\obj\Debug\visualstudio_py_repl.py
+D:\Projects\WebProject1\WebProject1\obj\Debug\visualstudio_py_util.py
+D:\Projects\WebProject1\WebProject1\obj\Debug\__init__.py
+D:\Projects\WebProject1\WebProject1\obj\Debug\__main__.py
+D:\Projects\WebProject1\WebProject1\bin\AzureSetup.cfg
+D:\Projects\WebProject1\WebProject1\bin\Microsoft.PythonTools.AzureSetup.exe
+D:\Projects\WebProject1\WebProject1\bin\Microsoft.PythonTools.AzureSetup.exe.config
+D:\Projects\WebProject1\WebProject1\bin\wfastcgi.py
+D:\Projects\WebProject1\WebProject1\obj\Debug\web.config
+D:\Projects\WebProject1\WebProject1\obj\Debug\web.debug.config
+D:\Projects\WebProject1\WebProject1\obj\Debug\deployment-updated-pyvenv.cfg
+D:\Projects\WebProject1\WebProject1\ptvs_virtualenv_proxy.py
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\WebProject1\WebProject1\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\WebProject1\WebProject1\obj\Debug\attach_server.py
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\WebProject1\WebProject1\obj\Debug\visualstudio_py_debugger.py
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\WebProject1\WebProject1\obj\Debug\visualstudio_py_repl.py
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\WebProject1\WebProject1\obj\Debug\visualstudio_py_util.py
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\WebProject1\WebProject1\obj\Debug\__init__.py
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\WebProject1\WebProject1\obj\Debug\__main__.py
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\WebProject1\WebProject1\bin\AzureSetup.cfg
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\WebProject1\WebProject1\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\WebProject1\WebProject1\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\WebProject1\WebProject1\bin\wfastcgi.py
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\WebProject1\WebProject1\obj\Debug\deployment-updated-pyvenv.cfg
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\WebProject1\WebProject1\ptvs_virtualenv_proxy.py
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\WebProject1\WebProject1\obj\Debug\web.config
+C:\Users\Michael\Documents\Visual Studio 2015\Projects\WebProject1\WebProject1\obj\Debug\web.debug.config

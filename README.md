@@ -4,6 +4,8 @@
 
 В каждом каталоге одна задача.
 
+[/task13/](https://github.com/dchaly/ds101students/tree/master/task13) [Задача 13.](https://github.com/infoculture/datatasks/issues/13) Михаил Пелёвин. 
+
 [/task47/](https://github.com/dchaly/ds101students/tree/master/task47) [Задача 47.](https://github.com/infoculture/datatasks/issues/47) Полина Бессмертная. Для запуска необходимо установить bubbletree master.
 
 [/task49/](https://github.com/dchaly/ds101students/tree/master/task49) [Задача 49.](https://github.com/infoculture/datatasks/issues/49) Валерия Смирнова и Дарья Пичугина. [Результат визуализации](https://github.com/dchaly/ds101students/blob/master/task49/task49.pdf)
@@ -19,6 +21,4 @@
 [/task54/](https://github.com/dchaly/ds101students/tree/master/task54) [Задача 54.](https://github.com/infoculture/datatasks/issues/54) Илья Семенов и Дарья Топникова. [Результат визуализации](https://github.com/dchaly/ds101students/blob/master/task54/task54.pdf)
 
 Глеб Померанцев и Рыжов Сергей.
-
-Михаил Пелёвин.
 

@@ -1,0 +1,35 @@
+﻿#res{
+    border:solid 1px gray;
+    color:black;
+    border-radius: 10px;
+    border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #e1e8ed;
+    
+   
+    margin: 0px;
+    padding: 0px;
+    width: 350px;
+    line-height: 20px;
+    font-weight: 300;
+    margin-left: 10px;
+   
+}
+
+.contract{
+    font-weight:bold;
+    border:solid 1px blue;
+    border-radius: 10px;
+   
+}
+
+a{color:lightgray ;
+}
+a:hover {
+color: #222;
+background-color:#BA2323;
+}
+a:visited {
+color:blue;
+}
+
